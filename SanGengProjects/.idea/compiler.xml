@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringBootTest" />
+        <module name="SpringBootStatic" />
+        <module name="admin_serve" />
+        <module name="SpringBootWeb" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="02_SpringBootTest" target="1.8" />
+      <module name="admin_serve" target="1.8" />
+      <module name="springboot_static" target="1.8" />
+      <module name="SpringBootStatic" target="1.8" />
+      <module name="SpringBootTest" target="1.8" />
+      <module name="SpringBootWeb" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="02_SpringBootTest" options="-parameters" />
+      <module name="SpringBootStatic" options="-parameters" />
+      <module name="SpringBootTest" options="-parameters" />
+      <module name="SpringBootWeb" options="-parameters" />
+      <module name="admin_serve" options="-parameters" />
+    </option>
+  </component>
+</project>

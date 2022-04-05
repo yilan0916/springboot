@@ -1,0 +1,22 @@
+server:
+  port: 81
+
+debug: true #开启日志
+logging:
+  level:
+    com.hkvszk.springbootweb: debug #设置日志级别
+
+management:
+  endpoints:
+    enabled-by-default: true #配置启用所有端点
+    web:  #注意这个，复制过来的格式会少一个空格，导入暴露不成功
+     exposure:
+        include: "*" #web端暴露所有端点
+  endpoint:
+    health:
+      show-details: always
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8888 #配置 Admin Server的地址

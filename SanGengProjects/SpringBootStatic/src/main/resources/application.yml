@@ -1,0 +1,13 @@
+##ctrl按住，鼠标点进去，查看默认值是如何书写的，自己修改的时候按照默认值的书写格式修改，不容易出错
+#spring:
+#  mvc:
+#    static-path-pattern: /res/** #修改静态资源访问路径。默认值是**。  /res/**，**代表res下面的文件及其子包。
+#  web:
+#    resources:
+#      static-locations: #修改静态资源存放目录，可以有多个
+#        - classpath:/sgstatic/
+#        - classpath:/static/
+
+server:
+  port: 8080
+
